@@ -13,12 +13,12 @@
       GBP: 1.3
     };
     
-    // Obtiene la tasa de cambio entre la moneda de origen y la moneda de destino
+    // Obtener la tasa de cambio entre la moneda de origen y la moneda de destino
     const exchangeRate = exchangeRates[toCurrency] / exchangeRates[fromCurrency];
     
-    // Aplica la tasa de cambio al monto dado
+    // Aplicar la tasa de cambio al monto dado
     const convertedAmount = amount * exchangeRate;
     
-    // Muestra el monto convertido en el elemento "result"
+    // Mostrar el monto convertido en el elemento "result"
     document.getElementById("result").innerHTML = `${amount} ${fromCurrency} = ${convertedAmount} ${toCurrency}`;
   }
