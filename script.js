@@ -11,10 +11,11 @@
     GBP: 1.3
   };
   
+  // Formula de conversión aplicada
   const exchangeRate = exchangeRates[toCurrency] / exchangeRates[fromCurrency];
   const convertedAmount = amount * exchangeRate;
   
-  // En caso de que el monto escrito sea negativo, mostrará una alerta para que el usuario corrija su error
+  // En caso de que el monto escrito sea negativo, mostrará una alerta para que el usuario corrija su error, se usa un pequeño ciclo para ello.
 
   if (amount > 0) {
       document.getElementById("result").innerHTML = `${amount} ${fromCurrency} = ${convertedAmount} ${toCurrency}`;
