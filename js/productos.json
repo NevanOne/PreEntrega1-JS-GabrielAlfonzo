@@ -1,0 +1,182 @@
+[
+    {
+        "id": "gpu-01",
+        "titulo": "Placa de video RTX 2080 MSI",
+        "imagen": "./img/placas-de-video/01.png",
+        "categoria": {
+            "nombre": "Placas de Video",
+            "id": "gpu"
+        },
+        "precio": 100000
+    },
+    {
+        "id": "gpu-02",
+        "titulo": "Placa de video RTX 2080 AORUS",
+        "imagen": "./img/placas-de-video/02.png",
+        "categoria": {
+            "nombre": "Placas de Video",
+            "id": "gpu"
+        },
+        "precio": 125000
+    },
+    {
+        "id": "gpu-03",
+        "titulo": "Placa de video RTX 4070 TI",
+        "imagen": "./img/placas-de-video/03.png",
+        "categoria": {
+            "nombre": "Placas de Video",
+            "id": "gpu"
+        },
+        "precio": 450000
+    },
+    {
+        "id": "gpu-04",
+        "titulo": "Placa de video GTX 1080 TI",
+        "imagen": "./img/placas-de-video/04.png",
+        "categoria": {
+            "nombre": "Placas de Video",
+            "id": "gpu"
+        },
+        "precio": 50000
+    },
+    {
+        "id": "gpu-05",
+        "titulo": "Placa de video Armor GTX 1080",
+        "imagen": "./img/placas-de-video/05.jpg",
+        "categoria": {
+            "nombre": "Placas de Video",
+            "id": "gpu"
+        },
+        "precio": 45000
+    },
+    {
+        "id": "procesador-01",
+        "titulo": "Procesador Intel I3 8th Gen",
+        "imagen": "./img/procesadores/01.png",
+        "categoria": {
+            "nombre": "Procesadores",
+            "id": "procesadores"
+        },
+        "precio": 25000
+    },
+    {
+        "id": "procesador-02",
+        "titulo": "Procesador Intel I3 7th Gen",
+        "imagen": "./img/procesadores/02.png",
+        "categoria": {
+            "nombre": "Procesadores",
+            "id": "procesadores"
+        },
+        "precio": 20000
+    },
+    {
+        "id": "procesador-03",
+        "titulo": "Procesador Intel I5 7th Gen",
+        "imagen": "./img/procesadores/03.png",
+        "categoria": {
+            "nombre": "Procesadores",
+            "id": "procesadores"
+        },
+        "precio": 35200
+    },
+    {
+        "id": "procesador-04",
+        "titulo": "Procesador Intel I7 9th Gen",
+        "imagen": "./img/procesadores/04.png",
+        "categoria": {
+            "nombre": "Procesadores",
+            "id": "procesadores"
+        },
+        "precio": 80000
+    },
+    {
+        "id": "procesador-05",
+        "titulo": "Procesador Intel I7 7th Gen",
+        "imagen": "./img/procesadores/05.png",
+        "categoria": {
+            "nombre": "Procesadores",
+            "id": "procesadores"
+        },
+        "precio": 70000
+    },
+    {
+        "id": "procesador-06",
+        "titulo": "Procesador Intel I9 X Series",
+        "imagen": "./img/procesadores/06.jpg",
+        "categoria": {
+            "nombre": "Procesadores",
+            "id": "procesadores"
+        },
+        "precio": 95000
+    },
+    {
+        "id": "procesador-07",
+        "titulo": "Procesador Intel Pentium Gold",
+        "imagen": "./img/procesadores/07.jpg",
+        "categoria": {
+            "nombre": "Procesadores",
+            "id": "procesadores"
+        },
+        "precio": 10000
+    },
+    {
+        "id": "procesador-08",
+        "titulo": "Procesador Intel I5 10th Gen",
+        "imagen": "./img/procesadores/08.jpg",
+        "categoria": {
+            "nombre": "Procesadores",
+            "id": "procesadores"
+        },
+        "precio": 22350
+    },
+    {
+        "id": "periferico-01",
+        "titulo": "Teclado Redragon Kumara K552",
+        "imagen": "./img/perifericos/01.png",
+        "categoria": {
+            "nombre": "Perifericos",
+            "id": "perifericos"
+        },
+        "precio": 8500
+    },
+    {
+        "id": "periferico-02",
+        "titulo": "Teclado Redragon Dark Avenger",
+        "imagen": "./img/perifericos/02.jpg",
+        "categoria": {
+            "nombre": "Perifericos",
+            "id": "perifericos"
+        },
+        "precio": 6000
+    },
+    {
+        "id": "periferico-03",
+        "titulo": "Mouse Logitech G PRO RGB",
+        "imagen": "./img/perifericos/03.jpg",
+        "categoria": {
+            "nombre": "Perifericos",
+            "id": "perifericos"
+        },
+        "precio": 9000
+    },
+    {
+        "id": "periferico-04",
+        "titulo": "Mouse Logitech G502 RGB",
+        "imagen": "./img/perifericos/04.jpg",
+        "categoria": {
+            "nombre": "Perifericos",
+            "id": "perifericos"
+        },
+        "precio": 12500
+    },
+    {
+        "id": "periferico-04",
+        "titulo": "Auriculares Hyperx Alloy",
+        "imagen": "./img/perifericos/05.jpg",
+        "categoria": {
+            "nombre": "Perifericos",
+            "id": "perifericos"
+        },
+        "precio": 12255
+    }
+]
