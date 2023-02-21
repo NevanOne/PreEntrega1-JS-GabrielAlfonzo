@@ -1,12 +1,17 @@
 let productos = [];
 
-fetch("./js/productos.json")
-    .then(response => response.json())
-    .then(data => {
-        productos = data;
-        cargarProductos(productos);
-    })
+async function cargarProductosAsync() {
+  try {
+    const response = await fetch('./js/productos.json');
+    const data = await response.json();
+    productos = data;
+    cargarProductos(productos);
+  } catch (error) {
+    console.error('Ocurrió un error al cargar los productos:', error);
+  }
+}
 
+cargarProductosAsync();
 
 const contenedorProductos = document.querySelector("#contenedor-productos");
 let botonesCategorias = document.querySelectorAll(".boton-categoria");
@@ -77,7 +82,7 @@ let productosEnCarritoLS = localStorage.getItem("productos-en-carrito");
 
 if (productosEnCarritoLS) {
     productosEnCarrito = JSON.parse(productosEnCarritoLS);
-    actualizarNumerito();
+    actualizarNumerodecarrito();
 } else {
     productosEnCarrito = [];
 }
@@ -115,17 +120,18 @@ function agregarAlCarrito(e) {
         productosEnCarrito.push(productoAgregado);
     }
 
-    actualizarNumerito();
+    actualizarNumerodecarrito();
 
     localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
 }
 
-function actualizarNumerito() {
+function actualizarNumerodecarrito() {
     let nuevoNumerito = productosEnCarrito.reduce((acc, producto) => acc + producto.cantidad, 0);
     numerito.innerText = nuevoNumerito;
 }
 
   // Función para buscar componentes de hardware por precio
   function searchByPrice(price) {
-    return hardwareComponents.filter(component => component.price <= price);
+    return productos.filter(component => component.price <= price);
   }
+

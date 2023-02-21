@@ -356,6 +356,10 @@ main {
 }
 
 @media screen and (max-width: 600px) {
+    .logo{
+        width: 64px;
+        height: 64px;
+    }
 
     .wrapper {
         min-height: 100vh;
