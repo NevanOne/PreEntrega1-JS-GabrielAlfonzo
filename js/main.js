@@ -135,3 +135,41 @@ function actualizarNumerodecarrito() {
     return productos.filter(component => component.price <= price);
   }
 
+// Funcion de busqueda por palabras
+
+const searchBar = document.getElementById("barra-de-busqueda");
+const resultsContainer = document.getElementById("contenedor-productos");
+
+searchBar.addEventListener("input", () => {
+  const searchValue = searchBar.value.toLowerCase();
+
+  fetch("./js/productos.json")
+    .then(response => response.json())
+    .then(data => {
+      resultsContainer.innerHTML = "";
+
+      const filteredData = data.filter(item => {
+        const itemName = item.titulo.toLowerCase();
+        return itemName.includes(searchValue);
+      });
+
+      filteredData.forEach(item => {
+        const resultElement = document.createElement("div");
+        resultElement.classList.add("result");
+
+        const nameElement = document.createElement("h3");
+        nameElement.textContent = item.titulo;
+
+        resultElement.appendChild(nameElement);
+
+        if (item.titulo) { // Verificar si el objeto tiene una propiedad "titulo"
+          const descriptionElement = document.createElement("p");
+          descriptionElement.textContent = item.titulo;
+          resultElement.appendChild(descriptionElement);
+        }
+
+        resultsContainer.appendChild(resultElement);
+      });
+    })
+    .catch(error => console.error(error));
+});
